@@ -1,12 +1,50 @@
+# Projeto de Login com ReactJS
+
+Olá! Este é o projeto de login desenvolvido por Geovane Araujo, utilizando ReactJS para o frontend.
+
+## Instruções para Rodar o Projeto:
+
+1. **Clonar o Repositório:**
+
+```
+    git clone https://github.com/geovanesv/react-login.git
+
+```
+
+2. **Instalar Dependências:**
+- Frontend (ReactJS):
+  ```
+  cd react-login
+
+  npm install
+
+  ```
+
+3. **Rodando a aplicação:**
+- Frontend (ReactJS):
+  ```
+    npm run start
+
+  ```
+4. **Acessando a Aplicação**
+Agora você pode acessar o projeto no seu navegador em `http://localhost:3000` para o frontend ReactJS.
+
+
 # BIBLIOTECAS
+    - @types/material-ui
+    - react-icons
+    - styled-components
+    - @types/styled-components
 
-npx create-react-app apigithub --template typescript
-npm i @types/material-ui
-npm install react-icons
-npm i styled-components
-npm i @types/styled-components
-npm install @mui/material @mui/styled-engine-sc styled-components
 
-### `npm start`
+Agora você pode acessar o projeto no seu navegador em `http://localhost:3000` para o frontend ReactJS.
 
-### `npm run build`
+
+## Redes Sociais de Geovane Araujo:
+
+- [LinkedIn](https://www.linkedin.com/in/geovanesaraujo/)
+- [Twitter](https://twitter.com/Geovane_ofc206)
+- [Instagram](https://www.instagram.com/_geovane_araujo_/)
+
+Sinta-se à vontade para entrar em contato com Geovane Araujo através das redes sociais!
+
