@@ -6,28 +6,27 @@ Olá! Este é o projeto de login desenvolvido por Geovane Araujo, utilizando Rea
 
 1. **Clonar o Repositório:**
 
-```
-    git clone https://github.com/geovanesv/react-login.git
-
-```
+    ```
+       git clone https://github.com/geovanesv/react-login.git
+    
+    ```
 
 2. **Instalar Dependências:**
-- Frontend (ReactJS):
-  ```
-  cd react-login
-
-  npm install
-
-  ```
+    ```
+       cd react-login
+        
+       npm install
+    
+    ```
 
 3. **Rodando a aplicação:**
-- Frontend (ReactJS):
-  ```
-    npm run start
-
-  ```
+    ```
+       npm run start
+    
+    ```
 4. **Acessando a Aplicação**
-Agora você pode acessar o projeto no seu navegador em `http://localhost:3000` para o frontend ReactJS.
+   
+    - Agora você pode acessar o projeto no seu navegador em `http://localhost:3000` para o frontend ReactJS.
 
 
 # BIBLIOTECAS
@@ -37,10 +36,10 @@ Agora você pode acessar o projeto no seu navegador em `http://localhost:3000` p
     - @types/styled-components
 
 
-Agora você pode acessar o projeto no seu navegador em `http://localhost:3000` para o frontend ReactJS.
+Agora você pode acessar o projeto no seu navegador em `http://localhost:3000`.
 
 
-## Redes Sociais de Geovane Araujo:
+## Redes Sociais:
 
 - [LinkedIn](https://www.linkedin.com/in/geovanesaraujo/)
 - [Twitter](https://twitter.com/Geovane_ofc206)

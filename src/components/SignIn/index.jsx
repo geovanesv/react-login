@@ -40,6 +40,8 @@ export const Signin = () => {
 
   return (
     <Container>
+
+      {/* Banner --> Slide */}
       <div className="container">
         <div className="container1">
           <div className="image">
@@ -53,35 +55,48 @@ export const Signin = () => {
           </div>
         </div>
 
+
+        {/* Formulario */}
         <div className="container2">
           
           <Form onSubmit={handleSubmit}>
-            <Box display="flex" justifyContent="space-between" mb={2}>
-              <Typography variant="h5" gutterBottom>
-                <img src="Logo.png" alt="Logo" className="logo"  />
-              </Typography>
-              <Button variant="contained criar-conta">
+            <Box display="flex" justifyContent="flex-end" >
+              <Button  className="criar-conta">
                 Criar conta
               </Button>
             </Box>
-            <Typography variant="body1" gutterBottom>
-              Boas-vindas!
-            </Typography>
-            <Typography variant="body1" gutterBottom>
-              Entre utilizando uma das opções abaixo
-            </Typography>
+            <Box display="flex" flexDirection="column" alignItems="flex-start" className="inicio-logo">
+              <img src="Logo.png" alt="Logo" className="logo"/>
+              <Typography variant="body1" gutterBottom style={{marginTop:"30px", fontSize:"30px", fontWeight:"bold"}}>
+                Boas-vindas!
+              </Typography>
+              <Typography variant="body1" gutterBottom>
+                Entre utilizando uma das opções abaixo
+              </Typography>
+            </Box>
+            {/* <Box display="flex" justifyContent="flex-start" >
+              <Typography variant="h9" gutterBottom>
+                <img src="Logo.png" alt="Logo" className="logo"  />
+              </Typography>
+              <Typography variant="body1" gutterBottom>
+                Boas-vindas!
+              </Typography>
+              <Typography variant="body1" gutterBottom>
+                Entre utilizando uma das opções abaixo
+              </Typography>
+            </Box> */}
             <Grid container spacing={2} mt={2}>
               <Grid item xs={12} display="flex" justifyContent="center" className="social-icons">
-                <IconButton aria-label="Google" color="black" className="social-item">
+                <IconButton aria-label="Google" className="social-item">
                   <FaGoogle />
                 </IconButton>
-                <IconButton aria-label="Facebook" color="black" className="social-item">
+                <IconButton aria-label="Facebook" className="social-item">
                   <FaFacebook />
                 </IconButton>
-                <IconButton aria-label="Apple" color="black" className="social-item">
+                <IconButton aria-label="Apple" className="social-item">
                   <FaApple />
                 </IconButton>
-                <IconButton aria-label="Twitter" color="black" className="social-item">
+                <IconButton aria-label="Twitter" className="social-item">
                   <FaTwitter/>
                 </IconButton>
               </Grid>
@@ -132,7 +147,7 @@ export const Signin = () => {
                 />
               </Grid>
               <Grid item xs={12}>
-                <Button type="submit" variant="contained" fullWidth>
+                <Button type="submit" variant="contained" fullWidth className="botao-entrar">
                   Entrar
                 </Button>
               </Grid>

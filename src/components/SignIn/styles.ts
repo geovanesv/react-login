@@ -112,27 +112,53 @@ export const Form = styled.div`
     flex-direction: row;
     align-items: center;
   }
-    .logo{
-      margin-left: 20px;
-      }
-      .criar-conta{
-        margin-right: 20px;
+  .inicio-logo{
+    margin-top: -30px;
+    margin-right: 300px;
+    margin-botoom:10px;
     }
-    .social-icons{
-      display:flex;
-      justify-content: space-beteewen;
-      
+  
+  .logo{
 
-    }
+  }
 
-    .social-item{
-        border: 1px solid #ccc;
-        margin:10px;
-        border-radius: 4px;
-        padding-left: 60px;
-        padding-right: 60px;
-        display: inline-block;
-    }
+  .criar-conta{
+    margin-left: 400px;
+  }
+  .social-icons{
+    display:flex;
+    
+    justify-content: flex-start;
+  }
+
+
+
+  .botao-entrar{
+    backgroud-color: #0761E2;
+    color: #ffffff;
+  }
+  .botao-entrar:hover{
+    backgound-color:#00ABBF;
+  }
+
+
+
+  .social-item{
+      border: 1px solid #000000;
+      color:#000000;
+      font-size: 16px;
+      border-radius: 7px;
+      margin:10px;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: inline-block;
+  }
+  .social-item:hover{
+    color: #0761E2;
+    border: 1px solid #00ABBF;
+    background-color: #ffffff;
+    animation: pulse 0.5s infinite; 
+  }
 
   @media (max-width: 999px) {
     .bottom {
