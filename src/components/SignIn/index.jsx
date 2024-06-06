@@ -18,7 +18,7 @@ import {
 } from "@mui/material";
 import { HiOutlineUser } from "react-icons/hi";
 import { SlLock } from "react-icons/sl";
-import { FaFacebook, FaGoogle } from "react-icons/fa";
+import { FaApple, FaFacebook, FaGoogle, FaTwitch, FaTwitter } from "react-icons/fa";
 import axios from 'axios';
 
 export const Signin = () => {
@@ -71,12 +71,18 @@ export const Signin = () => {
               Entre utilizando uma das opções abaixo
             </Typography>
             <Grid container spacing={2} mt={2}>
-              <Grid item xs={12} display="flex" justifyContent="center">
-                <IconButton aria-label="Facebook" color="primary">
+              <Grid item xs={12} display="flex" justifyContent="center" className="social-icons">
+                <IconButton aria-label="Google" color="black" className="social-item">
+                  <FaGoogle />
+                </IconButton>
+                <IconButton aria-label="Facebook" color="black" className="social-item">
                   <FaFacebook />
                 </IconButton>
-                <IconButton aria-label="Google" color="primary">
-                  <FaGoogle />
+                <IconButton aria-label="Apple" color="black" className="social-item">
+                  <FaApple />
+                </IconButton>
+                <IconButton aria-label="Twitter" color="black" className="social-item">
+                  <FaTwitter/>
                 </IconButton>
               </Grid>
               <Grid item xs={12}>

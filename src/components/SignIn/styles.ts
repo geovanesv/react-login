@@ -64,7 +64,7 @@ export const Container = styled.div`
 export const Form = styled.div`
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 75%;
   height: 80vh;
   align-items: center;
   margin: auto;
@@ -117,6 +117,21 @@ export const Form = styled.div`
       }
       .criar-conta{
         margin-right: 20px;
+    }
+    .social-icons{
+      display:flex;
+      justify-content: space-beteewen;
+      
+
+    }
+
+    .social-item{
+        border: 1px solid #ccc;
+        margin:10px;
+        border-radius: 4px;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: inline-block;
     }
 
   @media (max-width: 999px) {
