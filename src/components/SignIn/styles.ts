@@ -77,16 +77,66 @@ export const Form = styled.div`
     margin-bottom: 1rem;
     animation: ${moveToRight} 0.5s;
   }
+  
+
+  
+    
   @media (max-width: 999px) {
+    
     width: 100%;
-    height: 65vh;
-   
+    height: 70vh;
     border-radius: 30px;
-    .input {
+
+    input {
       width: 80%;
       animation: ${moveToRight} 0.5s;
+      height:20%;
     }
+    .inicio-logo {
+      top: 50px;
+      margin-right: 0;
+      margin-left: 250px;
+      text-align: center;
+
+    }
+      
+    .criar-conta {
+      margin-left: 0;
+      margin-right:150px;
+      position: absolute;
+      top: 50px;
+      margin-bottom:30px;
+    }
+    
+
+    .container2 {
+      width: 100%;
+      height: 50vh;
+    }
+
+    .social-icons {
+        justify-content: center; 
+        margin-left: 0; 
+    }
+
+    .social-item {
+        font-size: 12px; 
+        padding: 5px; 
+        margin: 5px; 
+        border-radius: 5px; 
+    }
+
+    .captcha-box{
+      display: none;
+    }
+
   }
+
+
+
+ 
+
+
   .checkbox {
     align-items: center;
     display: flex;
@@ -124,23 +174,23 @@ export const Form = styled.div`
 
   .criar-conta{
     margin-left: 400px;
-    margin-top:-50px;
+    margin-top:-20px;
   }
   
   .divider {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%; 
-  line-height: 100px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    line-height: 100px;
+  }
 
-.divider hr {
-  flex: 1;
-  border: 1px solid #c9c3c3;
-  max-width: 100%; 
+  .divider hr {
+    flex: 1;
+    border: 1px solid #c9c3c3;
+    max-width: 100%; 
+  }
 
-}
   .botao-entrar{
     backgroud-color: #0761E2;
     color: #ffffff;
@@ -177,10 +227,10 @@ export const Form = styled.div`
 
 
   .captcha-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
   }
 
   .captcha-container input[type="checkbox"] {
@@ -206,7 +256,7 @@ export const Form = styled.div`
 
 @media (max-width: 999px) {
     .bottom {
-      width: 80%;
+      width: 60%;
     }
     .buttom {
       background: #fc750f;

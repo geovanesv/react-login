@@ -47,12 +47,6 @@ export const Signin = () => {
         <div className="container1">
           <div className="image">
             <Slider />
-            
-            {/* <img
-              src="Banner01.png"
-              className="img-banner"
-              alt="banner"
-            /> */}
           </div>
         </div>
 
@@ -60,8 +54,8 @@ export const Signin = () => {
         <div className="container2">
           
           <Form onSubmit={handleSubmit}>
-            <Box display="flex" justifyContent="flex-end" >
-              <Button  className="criar-conta">
+            <Box display="flex" justifyContent="flex-end" className="criar-conta" >
+              <Button className="botao-conta">
                 Criar conta
               </Button>
             </Box>
@@ -145,7 +139,7 @@ export const Signin = () => {
                 />
               </Grid>
               <Grid container spacing={2}>
-            <Grid item xs={12} display="flex" justifyContent="center">
+            <Grid item xs={12} display="flex" justifyContent="center" className="captcha-box">
               <CaptchaComponent onVerify={setIsCaptchaVerified} />
             </Grid>
           </Grid> 
