@@ -18,6 +18,7 @@ import { HiOutlineUser } from "react-icons/hi";
 import { SlLock } from "react-icons/sl";
 import { FaApple, FaFacebook, FaGoogle, FaTwitch, FaTwitter } from "react-icons/fa";
 import axios from 'axios';
+import Slider from './slider';
 
 
 export const Signin = () => {
@@ -45,16 +46,15 @@ export const Signin = () => {
       <div className="container">
         <div className="container1">
           <div className="image">
-            <img
+            <Slider />
+            
+            {/* <img
               src="Banner01.png"
-              // width={400}
-              // height={400}
               className="img-banner"
               alt="banner"
-            />
+            /> */}
           </div>
         </div>
-
 
         {/* Formulario */}
         <div className="container2">
