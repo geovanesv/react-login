@@ -1,9 +1,6 @@
-
-
 import { Container, Form, Logo } from "./styles";
 import FilledInput from "@mui/material/FilledInput";
 import  CaptchaComponent  from "./captcha";
-
 import React, { useState } from "react";
 import {
   TextField,
@@ -21,6 +18,7 @@ import { HiOutlineUser } from "react-icons/hi";
 import { SlLock } from "react-icons/sl";
 import { FaApple, FaFacebook, FaGoogle, FaTwitch, FaTwitter } from "react-icons/fa";
 import axios from 'axios';
+
 
 export const Signin = () => {
   

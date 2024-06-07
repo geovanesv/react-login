@@ -180,7 +180,7 @@ export const Form = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 10px;
   }
 
   .captcha-container input[type="checkbox"] {

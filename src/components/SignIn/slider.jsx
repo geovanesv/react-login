@@ -1,11 +1,5 @@
-import React, { useState } from 'eact';
-import {
-  Box,
-  Button,
-  Typography,
-  Grid,
-  useTheme,
-} from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Button, Typography, Grid, useTheme } from '@mui/material';
 
 const Banner = () => {
   const theme = useTheme();
@@ -14,13 +8,15 @@ const Banner = () => {
   const slides = [
     {
       title: 'Plataforma de cursos completa',
-      text: 'Lorem ipsum nisl etiam himenaeos ligula augue vehicula gravida tincidunt, etiam magna sapien gravida sodales sed vel pulvinar suspendisse, morbi mi proin urna ornare posuere donec aptent.',
+      text: 'Lorem ipsum...',
+      image: 'Banner.png',
     },
     {
       title: 'Plataforma de cursos completa',
-      text: 'Lorem ipsum nisl etiam himenaeos ligula augue vehicula gravida tincidunt, etiam magna sapien gravida sodales sed vel pulvinar suspendisse, morbi mi proin urna ornare posuere donec aptent.',
+      text: 'Lorem ipsum...',
+      image: 'Banner01.png',
     },
-    // Adicione mais slides aqui
+    // Add more slides here
   ];
 
   const handleNextSlide = () => {
@@ -35,7 +31,7 @@ const Banner = () => {
     <Box
       sx={{
         width: '100%',
-        height: '300px', // Altere o tamanho do banner aqui
+        height: '300px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -45,6 +41,7 @@ const Banner = () => {
     >
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
+          <img src={slides[slideIndex].image} alt={slides[slideIndex].title} />
           <Typography variant="h2" component="h2">
             {slides[slideIndex].title}
           </Typography>
