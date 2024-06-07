@@ -65,7 +65,7 @@ export const Form = styled.div`
   display: flex;
   flex-direction: column;
   width: 75%;
-  height: 80vh;
+  height: 85vh;
   align-items: center;
   margin: auto;
 
@@ -114,9 +114,9 @@ export const Form = styled.div`
   }
   .inicio-logo{
     margin-top: -30px;
-    margin-right: 300px;
+    margin-right: 285px;
     margin-botoom:10px;
-    }
+  }
   
   .logo{
 
@@ -124,34 +124,49 @@ export const Form = styled.div`
 
   .criar-conta{
     margin-left: 400px;
+    margin-top:-50px;
   }
-  .social-icons{
-    display:flex;
-    
-    justify-content: flex-start;
-  }
+  
+  .divider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  line-height: 100px;
+}
 
+.divider hr {
+  flex: 1;
+  border: 1px solid #c9c3c3;
+  max-width: 100%; 
 
-
+}
   .botao-entrar{
     backgroud-color: #0761E2;
     color: #ffffff;
   }
+
   .botao-entrar:hover{
     backgound-color:#00ABBF;
   }
+      
+      
+  .social-icons{
+    display: flex;
+    justify-content: flex-start;
+    margin-left:-10px;
 
-
+  }
 
   .social-item{
-      border: 1px solid #000000;
-      color:#000000;
-      font-size: 16px;
-      border-radius: 7px;
-      margin:10px;
-      padding-left: 50px;
-      padding-right: 50px;
-      display: inline-block;
+    border: 1px solid #000000;
+    color:#000000;
+    font-size: 16px;
+    border-radius: 7px;
+    margin:10px;
+    padding-left: 55px;
+    padding-right: 55px;
+    display: inline-block;
   }
   .social-item:hover{
     color: #0761E2;
@@ -160,7 +175,36 @@ export const Form = styled.div`
     animation: pulse 0.5s infinite; 
   }
 
-  @media (max-width: 999px) {
+
+  .captcha-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  }
+
+  .captcha-container input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .hcaptcha-logo {
+    margin-left: auto;
+  }
+
+  .hcaptcha-links {
+    margin-left: 20px;
+  }
+
+  .hcaptcha-links a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+ 
+
+
+
+@media (max-width: 999px) {
     .bottom {
       width: 80%;
     }

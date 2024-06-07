@@ -2,6 +2,7 @@
 
 import { Container, Form, Logo } from "./styles";
 import FilledInput from "@mui/material/FilledInput";
+import  CaptchaComponent  from "./captcha";
 
 import React, { useState } from "react";
 import {
@@ -26,6 +27,7 @@ export const Signin = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -70,21 +72,11 @@ export const Signin = () => {
               <Typography variant="body1" gutterBottom style={{marginTop:"30px", fontSize:"30px", fontWeight:"bold"}}>
                 Boas-vindas!
               </Typography>
-              <Typography variant="body1" gutterBottom>
+              <Typography variant="body1" gutterBottom style={{ whiteSpace: 'nowrap' }}>
                 Entre utilizando uma das opções abaixo
               </Typography>
             </Box>
-            {/* <Box display="flex" justifyContent="flex-start" >
-              <Typography variant="h9" gutterBottom>
-                <img src="Logo.png" alt="Logo" className="logo"  />
-              </Typography>
-              <Typography variant="body1" gutterBottom>
-                Boas-vindas!
-              </Typography>
-              <Typography variant="body1" gutterBottom>
-                Entre utilizando uma das opções abaixo
-              </Typography>
-            </Box> */}
+            
             <Grid container spacing={2} mt={2}>
               <Grid item xs={12} display="flex" justifyContent="center" className="social-icons">
                 <IconButton aria-label="Google" className="social-item">
@@ -100,6 +92,14 @@ export const Signin = () => {
                   <FaTwitter/>
                 </IconButton>
               </Grid>
+              <Grid container style={{marginLeft:"12px"}} mt={2}  display="flex" justifyContent="center" alignItems="center">
+                <div className="divider">
+                  <hr />
+                  <span style={{color:"#4b4b4b"}}>ou</span>
+                  <hr />
+                </div>
+              </Grid>
+
               <Grid item xs={12}>
                 <TextField
                   id="username"
@@ -146,6 +146,12 @@ export const Signin = () => {
                   label="Manter conectado"
                 />
               </Grid>
+              <Grid container spacing={2}>
+            <Grid item xs={12} display="flex" justifyContent="center">
+              <CaptchaComponent onVerify={setIsCaptchaVerified} />
+            </Grid>
+          </Grid> 
+
               <Grid item xs={12}>
                 <Button type="submit" variant="contained" fullWidth className="botao-entrar">
                   Entrar
