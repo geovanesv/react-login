@@ -78,6 +78,9 @@ export const Form = styled.div`
     animation: ${moveToRight} 0.5s;
   }
   
+  .mobile-prev-button{
+    display:none;
+  }
 
   
     
@@ -114,16 +117,13 @@ export const Form = styled.div`
       height: 50vh;
     }
 
-    .social-icons {
-        justify-content: center; 
-        margin-left: 0; 
-    }
+    
 
     .social-item {
         font-size: 12px; 
         padding: 5px; 
         margin: 5px; 
-        border-radius: 5px; 
+        border-radius: 5px;
     }
 
     .captcha-box{
@@ -250,7 +250,68 @@ export const Form = styled.div`
     color: #007bff;
   }
 
- 
+
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* iPhone SE with dimensions 375x667 */
+  .container2 {
+    height: 677px;
+    }
+    
+  .inicio-logo {
+    margin-top: 30px;
+    margin-bottom:-30px;
+    margin-right: 0;
+    margin-left: -10px;
+    text-align: center;
+  }
+
+  .botao-conta{
+    display:flex;
+    margin-right:-100px;
+    
+
+  }
+
+  .mobile-prev-button{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    marginTop: '-550px',
+    color: '#FFFFFF',
+    border: 'solid 1px',
+    borderRadius: '30px',
+    borderColor: '#FFFFFF',
+    cursor: 'pointer',
+  }
+
+  .criar-conta {
+    margin-left: 60px;
+    
+    position: relative;
+    margin-top: -130px;
+    border-bottom: 2px solid #c3c3c3;
+    padding-bottom: 10px;
+    padding-right: 40%;
+    width: 100%;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom:-35px;
+  }
+  .logo{
+    margin-bottom:-10px;
+  }
+  .social-item {
+    font-size: 14px;
+    border-radios:25px;
+    margin: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline-block;
+  }
+}
+
 
 
 

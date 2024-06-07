@@ -36,8 +36,6 @@ Olá! Este é o projeto de login desenvolvido por Geovane Araujo, utilizando Rea
     - @types/styled-components
 
 
-Agora você pode acessar o projeto no seu navegador em `http://localhost:3000`.
-
 
 ## Redes Sociais:
 

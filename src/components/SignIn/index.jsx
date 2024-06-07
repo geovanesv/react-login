@@ -39,6 +39,7 @@ export const Signin = () => {
       });
   };
 
+
   return (
     <Container>
 
@@ -55,10 +56,14 @@ export const Signin = () => {
           
           <Form onSubmit={handleSubmit}>
             <Box display="flex" justifyContent="flex-end" className="criar-conta" >
+              <div className="mobile-prev-button">
+                <span style={{ fontSize: 24 }}>&lt;</span>
+              </div>
               <Button className="botao-conta">
                 Criar conta
               </Button>
             </Box>
+
             <Box display="flex" flexDirection="column" alignItems="flex-start" className="inicio-logo">
               <img src="Logo.png" alt="Logo" className="logo"/>
               <Typography variant="body1" gutterBottom style={{marginTop:"30px", fontSize:"30px", fontWeight:"bold"}}>
