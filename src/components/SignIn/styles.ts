@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes} from "styled-components";
 
 const moveToRight = keyframes`
 
@@ -19,9 +19,13 @@ const moveToRight = keyframes`
 
 `;
 
+
 export const Container = styled.div`
+
   width: 100%;
   height: 100vh;
+  
+  
   .container {
     display: flex;
     flex-direction: row;
@@ -251,6 +255,8 @@ export const Form = styled.div`
   }
 
 
+
+
  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   /* iPhone SE with dimensions 375x667 */
   .container2 {
@@ -268,19 +274,16 @@ export const Form = styled.div`
   .botao-conta{
     display:flex;
     margin-right:-100px;
-    
-
+    color:#000000;
   }
+  
 
   .mobile-prev-button{
     position: 'absolute',
-    top: 0,
-    left: 0,
-    marginTop: '-550px',
-    color: '#FFFFFF',
+    color: '#000000',
     border: 'solid 1px',
     borderRadius: '30px',
-    borderColor: '#FFFFFF',
+    borderColor: '#000000',
     cursor: 'pointer',
   }
 
