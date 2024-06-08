@@ -28,13 +28,22 @@ Olá! Este é o projeto de login desenvolvido por Geovane Araujo, utilizando Rea
    
     - Agora você pode acessar o projeto no seu navegador em `http://localhost:3000` para o frontend ReactJS.
 
+5. **Preview**
+    - confira o projeto ao vivo -> [Login](https://react-login-teste.netlify.app/)
+    - faça login com as credenciais:
+    ```
+        usuario: geovane
+        senha: 123456
+
+    ```
+
+
 
 # BIBLIOTECAS
     - @types/material-ui
     - react-icons
     - styled-components
     - @types/styled-components
-
 
 
 ## Redes Sociais:
