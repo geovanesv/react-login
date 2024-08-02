@@ -1,6 +1,8 @@
 # Projeto de Login com ReactJS
 
-Olá! Este é o projeto de login desenvolvido por Geovane Araujo, utilizando ReactJS para o frontend.
+Olá! Este é o projeto de login desenvolvido por Geovane Araujo, utilizando ReactJS para o frontend e Laravel para Backend.
+
+![image](https://github.com/user-attachments/assets/6cba695b-e37a-4bd5-a0d2-78c88984d3b2)
 
 ## Instruções para Rodar o Projeto:
 
